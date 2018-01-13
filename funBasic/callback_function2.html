@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback</title>
+</head>
+<body>
+	<span id="text"> we can calculate ....</span>
+	<script type="text/javascript">
+		circle = function(a){
+		 return (3.14 * a * a)
+	};
+	     square = function(a){
+		  return(a * a)
+	};
+	      cube = function(a){
+	      	return (a * a * a)
+	      };
+
+	      area = function(a, callback){
+	      	return callback(a)
+
+	      };
+	      	document.write(area(4, circle));
+
+	</script>
+
+</body>
+</html>

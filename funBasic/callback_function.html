@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback</title>
+</head>
+<body>
+	<span id="text">we are using the callback function for calculations</span>
+	<script type="text/javascript">
+
+		  add = function(a, b){
+          return (a+b)  
+		};
+
+		sub = function(a, b){
+          return (a - b)  
+		};
+		 calc = function(n1, n2, back){
+           return back(n1, n2)
+       
+		};
+		// document.write(calc(10, 7, sub));
+		document.write(calc(10, 5, function(a, b){return a*b;};))
+
+	</script>
+
+</body>
+</html>

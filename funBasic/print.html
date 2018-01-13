@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+</head>
+<body>
+	<p id="text"></p>
+
+<!-- print 10 numbers 
+
+	<script type="text/javascript">
+	for(var i =1; i<=10; i++ )
+	{
+	document.write(i+"<br/>")
+	}
+
+	</script> -->
+
+<!-- print even no  
+	<script type="text/javascript">
+		var  p = 1;
+		for(var p = 0; p <= 10; p++){
+			if( p%2==0)
+      
+      document.write(p+ "<br/>")
+}
+		
+	</script> -->
+
+
+	<script type="text/javascript">
+		fact = 1
+		function factorial(n) {
+for(var i = n; i<n; i--){
+
+	fact = fact * i
+}
+}
+document.getElementById('text').innerHTML = factorial(4)
+	// body...
+		
+	</script>
+
+</body>
+</html>

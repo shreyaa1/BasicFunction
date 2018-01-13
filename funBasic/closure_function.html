@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>closure</title>
+</head>
+<body>
+	<p id="text">0</p>
+	<button onclick="increase()">add</button>
+	<script type="text/javascript">
+		var counter = 0
+		add = function () {
+			return counter += 1;
+			
+		};
+/*closure fun -> a function is called inside a function*/
+		function increase() {
+			document.getElementById('text').innerHTML = add(); 
+		};
+	</script>
+
+</body>
+</html>
